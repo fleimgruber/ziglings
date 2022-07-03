@@ -44,8 +44,8 @@ pub fn main() void {
     std.debug.print("Insect report! ", .{});
 
     // Could it really be as simple as just passing the union?
-    printInsect(???);
-    printInsect(???);
+    printInsect(ant);
+    printInsect(bee);
 
     std.debug.print("\n", .{});
 }
