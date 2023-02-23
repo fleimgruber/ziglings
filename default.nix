@@ -24,6 +24,9 @@ pkgs.mkShell {
   nativeBuildInputs =
     [ env.dev ]
     ++ (with pkgs; [ cmake gdb ninja qemu zls ])
-    ++ (with pkgs; with llvmPackages_13; [ clang clang-unwrapped lld llvm ]);
+    ++ (with pkgs; with llvmPackages_14; [ clang clang-unwrapped lld llvm ]);
   hardeningDisable = [ "all" ];
+  shellHook = ''
+    export PATH=/home/fps/dev/zig-bootstrap/out/zig-x86_64-linux-musl-native/bin:$PATH
+  '';
 }
