@@ -1,4 +1,8 @@
-/zig-cache/
-/zig-out/
-/answers/
-/patches/healed/
+zig-cache/
+zig-out/
+answers/
+patches/healed/
+./flox
+catalog.json
+*~
+*.swp
