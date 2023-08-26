@@ -29,6 +29,7 @@
 const std = @import("std");
 const ascii = std.ascii;
 const print = std.debug.print;
+const math = std.math;
 
 pub fn main() !void {
     // let's check the pangram
@@ -60,5 +61,5 @@ fn isPangram(str: []const u8) bool {
     // and if so, we know the given string is a pangram
     //
     // but what do we have to compare?
-    return bits == 0x..???;
+    return bits == math.pow(u32, 2, 26) - 1;
 }

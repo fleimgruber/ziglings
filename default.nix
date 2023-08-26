@@ -21,7 +21,6 @@ pkgs.mkShell {
     ++ (with pkgs; with llvmPackages_16; [ clang clang-unwrapped lld llvm ]);
   hardeningDisable = [ "all" ];
   shellHook = ''
-    export PATH=/home/fps/dev/zig-bootstrap/out/zig-x86_64-linux-musl-native/bin:$PATH
     export PATH=/home/fps/dev/zig/build/stage3/bin:$PATH
   '';
 }
