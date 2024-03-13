@@ -1,0 +1,6 @@
+[tools]
+zig = "ref:master"
+
+[tasks.compile_on_change]
+description = "Watch files for changes and recompile them"
+run = "uv run --with watchgod python compile_on_change.py"
